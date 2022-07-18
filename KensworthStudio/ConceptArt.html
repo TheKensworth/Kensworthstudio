@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        .SmallButton {
+            margin-top: 0px;
+            margin-left: 70px;
+        }
+
+        .titleIMG {
+            width: 97%;
+            padding-top: 5vw;
+            padding-left: 1%;
+        }
+
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 1vw 14px;
+                text-decoration: none;
+                font-size: 1.6vw;
+                font-family: Helvetica;
+                letter-spacing: 1px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #33ccff;
+                    color: black;
+                }
+
+
+        footer {
+            background-color: LightGrey;
+            bottom: 50px;
+            width: 100%;
+            height: 110px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .InfoBoxes {
+            text-decoration: none;
+            position: absolute;
+            background-color: #003249;
+            color: #faf0ca;
+            width: 18%;
+            height: 8vw;
+            top: 25vw;
+            left: 4vw;
+        }
+
+        div.sticky {
+            position: relative;
+            top: 0;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            height: 100%;
+            color: black;
+        }
+
+        .images:hover {
+            filter: invert();
+        }
+        .LeftSpace {
+            padding-left: 3vw;
+            padding-top: 3vw;
+            padding-bottom: 5vw;
+            padding-right: 10vw;
+            line-height: 1.8;
+            font-size: 1.2vw;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="sticky" style="background-color:#e6e6e6;">
+        <div class="topnav">
+            <a href="HomePage.html">
+                <img src="KensworthStudiosLogo.png" style="width:2vw;height:1.2vw;">
+            </a>
+            <a href="Portfolio.html"><b>Portfolio</b></a>
+            <a href="Websites.html"><b>Websites</b></a>
+            <a class="active" href="ConceptArt.html"><b>Concept</b></a>
+            <a href="3D Modeling.html"><b>3D Modeling</b></a>
+        </div>
+    </div>
+
+    <div>
+        <h1 style="font-size: 10vw; text-align: center;">Concept Art</h1>
+    </div>
+    <br>
+    <br>
+    <div>
+        <a class="InfoBoxes" style="font-size: 3vw; font-family: 'Trebuchet MS', sans-serif; padding-left:0.9%; padding-top:2vw; right: 47%;">
+            Vehicles
+            <p style="font-size: 1vw; font-family: 'Trebuchet MS', sans-serif; padding-left:0.9%; padding-top:1vw; right: 47%;">
+                2020 honda civic with a truck bed:
+            </p>
+        </a>
+        <br>
+        <br>
+        <br>
+        <img src="Concept.png" style="width:95%; padding-left:2.5%; padding-top:3vw">
+    </div>
+    <footer>
+        <p>this website is currently under developement!<p />
+        <a href="https://www.youtube.com/channel/UCfmNpLTZC7SM36wKJaJaAsA" target="_blank">
+            <img src="YTlogo.png" style="width:50px; padding-bottom:5px">
+        </a>
+
+        <a href="https://www.instagram.com/KensworthStudios/" target="_blank">
+            <img src="Instalogo.png" style="width:50px">
+        </a>
+
+        <button onclick="Gmail()" style="background-color:transparent; border-color:transparent;">
+            <img src="Gmaillogo.png" style="width:50px; padding-bottom:5px">
+        </button>
+    </footer>
+    <script>
+        function Gmail() {
+            navigator.clipboard.writeText("kensworthstudio@gmail.com");
+            alert("Copied Email adress to clipboard: " + "kensworthstudio@gmail.com");
+        }
+    </script>
+</body>
+</html>

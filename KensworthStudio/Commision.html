@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<style>
+    div.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        background-color: green;
+        border: 2px solid #4CAF50;
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+</style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>Kensworth Commitions</title>
+<body style="background-color: #d9d9d9;">
+    <header>
+        <h1 style="font-family: Courier New;text-align: center"> Commition requests </h1>
+    </header>
+    <div style="line-height: 1;font-size: 20px;font-family: verdana">
+        <form autocomplete="on" style="text-align: center;">
+            <label for="femail">Email:</label><br>
+            <input type="email" id="fname" placeholder="example@email.com"></input><br>
+            <p></p>
+            <p style="font-size:12px">You should get a responce in the next day or so.</p>
+            <textarea name="questions" rows="10" cols="30" style="line-height: 1; width:70vw" placeholder="Questions or Comments"></textarea><br>
+            <input type="submit" value="Submit" onclick="alert('Submitted!')"></input>
+        </form>
+    </div>
+    <script>
+	var id = null;
+function myMove() {
+  var elem = document.getElementById("animate");
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + "px";
+      elem.style.left = pos + "px";
+    }
+  }
+}
+	function downOne(obj){
+
+	}
+	function downOne(obj){
+
+	}
+    </script>
+</body>
+</html>
