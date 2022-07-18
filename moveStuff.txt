@@ -1,0 +1,20 @@
+<script>
+    window.onscroll = function () { BoxIntro(), BoxInfo()};
+    var hasPlayed = false;
+    function BoxIntro() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("Box1").className = "containerI";
+        }
+    }
+    function BoxInfo() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 && hasPlayed == false) {
+            hasPlayed = true;
+            document.getElementById("Box2").className = "containerII";
+        }
+    }
+
+    function IntroU(obj) {
+        obj.innerHTML = "Introduction";
+        obj.style = "font-size: 7.5vw; font-family: Verdana, sans-serif; font-weight:bold; width: 61vw"
+    }
+</script>
