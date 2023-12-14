@@ -21,7 +21,7 @@ nav{
     padding-top: 0.2vw;
     padding-left: 2vw;
     position:fixed;
-    z-index: 10;
+    z-index: 20;
     backdrop-filter: blur(10px);
 }
 main{
