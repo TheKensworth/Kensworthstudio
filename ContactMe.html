@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="engl">
+    <meta charset="utf-8">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>KD - Contact</title>
+        <link rel="icon" type="image/x-icon" href="Icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <meta name="keywords" content="KensworthStudios, kensworth, Kensworth Studio, Kensworth Studios, US, USA, studio">
+        <meta name="description" content="Kensworth Studio is a frelancing service by Kenny DeLangis. 3D modeling, Websites, Concept art, GameDev, Artist">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            main{background-color: black; margin: 0; color:#cee0e6; margin-top: 0vw; margin-bottom: -2vw;}
+            .cent{text-align: center;}
+            .textentry{ background-color: black; color:white;font-size: 2vw; border-radius: 10px;border-width: 2px;}
+            #arce{resize: none; width: 33vw; height:2.5vw; }
+            #arcs{resize: none; width: 33vw; height:2.5vw; }
+            #txt{resize: none; width: 33vw; height:10vw; }
+        </style>
+    </head>
+    <body class="viewport">
+        <header>
+            <div style="width: 40vw; position:absolute; margin:46vw 0px 0px 11vw; font-family:'Courier New', Courier, monospace; color:white; font-size: 1vw;">
+                Front end <b>web-developer</b> (Interactive) <b>Graphic designer</b> (Logos, Product) <b>3D Model Artist</b> (CAD, Scuplt, Product) Advertisement <b>Producer, Game developer</b>, Experice (Adobe, Unity, Blender)
+            </div>
+            <nav>
+                <a id="instagram" href="https://www.instagram.com/kensworthstudios/">Instagram</a>
+                <hr style="position: absolute; width: 72%; margin-top: -0.2vw;">
+                <a style="font-size: 3vw; color: #6e9cab;">Kenny DeLangis  ></a>
+                <a href="index.html" id="tab1" class="tab">About me ></a>
+                <a href="GraphicDesign.html" id="tab2" class="tab">Graphic design ></a>
+                <a href="Vehicles.html" id="tab3" class="tab">Cars ></a>
+                <a href="ContactMe.html" id="tab4" class="tab active">Contact me</a>
+                <hr style="position: absolute; width: 72%; margin-top: 0.5vw;">
+                
+            </nav>
+        </header>
+        <main>
+            <br>
+            <h1 class="cent">Send me a quick message! </h1>
+            <div style="margin-left: 33vw;">
+            <form>
+                <h3>Email</h3>
+                <textarea class="textentry" id="arce" cols="10" rows="1" maxlength="30vw" placeholder="johndoe@hotmail.com"></textarea>
+                <h3>Subject</h3>
+                <textarea class="textentry" id="arcs" cols="10" rows="1" maxlength="30vw" placeholder="hello!"></textarea>
+                <br>
+                <br>
+                <textarea class="textentry" id="txt" cols="10" rows="1" maxlength="30vw"></textarea>
+                <br>
+                <br>
+                <input type="checkbox" id="rsvemail" style="transform: scale(1.5);"><b>  Sign up for newsletter</b></input>
+                <br>
+                <br>
+                <input type="submit" id="submit" value="Submit" class="textentry">
+                <br>
+                <br>
+            </form>
+            </div>
+            <br>
+        </main>
+        <footer>
+            Website made by Kenny DeLangis
+            <br> <p style="font-size:1.25vw">Thank you for visiting my humble website</p>
+            <div style="width: 30vw; height: 3vw; padding-top: 2vw; text-align:center; font-size: 1.5vw; padding-left: 23vw; margin-bottom: -2vw;">
+                Contact me:
+                <button onclick="Gmail()" style="background-color:transparent; border-color:transparent; cursor: pointer; margin-top: -1.75vw; position:absolute;">
+                    <p style="font-family:'Courier New', Courier, monospace; color: #faf0ca; font-size: 1.5vw;" alt="Click to copy email">kensworthstudio@gmail.com</p>
+                </button>
+            </div>
+        </footer>
+    </body>
+</html>
+<script>
+    document.getElementById('submit')
+	.addEventListener('click', function() {
+		alert("Your message has been sent successfully. I'll reply ASAP!");
+	});
+</script>

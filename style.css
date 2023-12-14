@@ -1,0 +1,90 @@
+body{
+    margin: auto;
+    font-family: railwa;
+    font-family: "Raleway", sans-serif;
+    user-select: none;
+}
+.viewport::-webkit-scrollbar {width: 0;}
+.viewport{-ms-overflow-style: none; scrollbar-width: none;}
+header{
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 60vw;
+}
+nav{
+    margin-top: 0.8vw;
+    height: 4vw; width: 100%;
+    font-size: 2vw;
+    padding-top: 0.2vw;
+    padding-left: 2vw;
+    position:fixed;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+main{
+    background-color: #f3f2f4;;
+    color: #16171b;
+    padding-top: 5vw;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+    margin:0.5vw;
+}
+h1{
+    text-align: center;
+    font-size: 5vw;
+    margin: 0;
+    letter-spacing: 0.4vw;
+}
+footer{
+    font-family:'Courier New', Courier, monospace; height: 12vw; background-color: #003249; font-size: 2vw; text-align: center; color: #faf0ca; padding-top: 2vw;
+}
+.tab{position: absolute;margin-top: 0.8vw; opacity: 0;  transition: 1s; width: 20vw; }
+.tab:hover{color:#3c3f4b}
+nav:hover > #tab1{opacity: 100%;}
+nav:hover > #tab2{margin-left:12vw; opacity: 100%;}
+nav:hover > #tab3{margin-left:28vw; opacity: 100%;}
+nav:hover > #tab4{margin-left:34vw; opacity: 100%;}
+.active, .tab:hover{opacity: 100%;}
+#titled{font-size: 10vw;margin:0vw;margin-left: 2vw;}
+#instagram{margin-left: 80vw; margin-top: 0.1vw; position: absolute; border: 2px solid #f3f2f4; border-radius: 1.5vw; padding: 0.5vw 2vw; color: #f3f2f4; transition: 0.2s; mix-blend-mode:difference;}
+#instagram:hover{background-color: #f3f2f427;}
+#kendelan{opacity: 50%;transform-origin: 0 0;transform: rotate(90deg);margin:2vw;margin-top:-10vw;font-size: 1.2vw; width:10vw}
+.zebra{background-color: #d3d3d3;} .tablehead{background-color: #20b2aa;}
+.colorbox{width: 10vw; height: 3vw; margin-left: 0vw; margin-top: -4.75vw; position: absolute; color: #000000;border: 1px solid black; transform: scale(80%);}
+.colorboxstyle{border-color: #000000; border-style: solid; border-width: 1px; width: 2vw; height: 2vw; margin: 0.5vw;}
+h6{font-family: 'Courier New', Courier, monospace; margin-top: 0.3vw; margin-left:2.5vw; position: absolute; font-size: 1.5vw; font-weight: normal;}
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 70%; margin-left: 15%;}
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 90%; }
+.images{position: absolute; transition: 0.2s; z-index: 12;}
+.imagess{position: absolute; transition: 0.2s; z-index: 14; filter: brightness(0.7);}
+
+#aboutB{background-color:black; width: 60vw; height: 1vw;position: absolute; color:#faf0ca; font-size: 2vw; transition: 0.5s; overflow: clip; z-index: 11;}
+#aboutC{ background-color:black; width: 60vw; height: 1vw; position: absolute; color:#faf0ca; font-size: 2vw; transition: 0.5s; overflow: clip; z-index: 11;}
+#aboutC:hover{overflow: visible;}
+#aboutme{ -moz-user-select: none; -webkit-user-select: none; user-select: none; font-size:10vw; color:black; font-family: 'Courier New', monospace; width: 75%; margin: 5vw;}
+#experince{ -moz-user-select: none; -webkit-user-select: none; user-select: none; font-size:10vw; color:black; font-family: 'Courier New', monospace; width: 75%; margin: 5vw;}
+#aboutme:hover #aboutB{ background-color: #142020; width: 80vw; height: 20vw; }
+#experince:hover #aboutC{ background-color: #142020; width: 90vw; height: 30vw; margin-left: -29vw;}
+.card{
+    width: 15vw;
+    position: absolute;
+    margin-top: 5vw;
+    transition: 0.2s;
+    z-index: 12;
+    box-shadow: 100 100 white;
+}
+#carddeal{ height: 35vw; margin-top: 12vw; margin-left: 30vw;}
+#cardA{margin-left: 10vw;} #cardA:hover {width:25vw; margin-left: 2.5vw; margin-top: -2vw;}
+#cardB{margin-left: 35vw;} #cardB:hover {width:25vw; margin-left: 29.5vw; margin-top: -2vw;}
+#cardC{margin-left: 60vw;} #cardC:hover {width:25vw; margin-left: 57.5vw; margin-top: -2vw;}
+
+@media screen and (min-width : 0px) and (max-width : 767px){
+    #cardA:hover{width:60vw; margin-left: 2.5vw; margin-top: -2vw; z-index: 12;}
+    #cardB:hover{width:60vw; margin-left: 12.5vw; margin-top: -2vw; z-index: 12;}
+    #cardC:hover{width:60vw; margin-left: 17vw; margin-top: -2vw; z-index: 12;}
+}
